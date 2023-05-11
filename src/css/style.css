@@ -244,9 +244,8 @@ color: #757575;
   margin-top:20px;
 }
 .feature_items {
-  display:flex;
+  gap: 6px;
   flex-wrap: wrap;
-
 }
 
 .tinu {
@@ -270,3 +269,35 @@ color: #757575;
 .animations:hover {
   transform: rotate3d(0, 10, 5, 50deg) translate3d(10px, 50px, 50px);
 }
+
+.team_2 {
+  box-sizing: border-box;
+  width: 370px;
+height: 404px;
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+}
+
+.team_2 img {
+  width: 370px;
+  height: 294px;
+}
+
+.team_2 h3 {
+  margin-left: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.team_2 h2 {
+  margin-left: 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px
+}
+
