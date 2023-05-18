@@ -128,7 +128,7 @@ color: #757575;
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 36px;
+font-size: 50px;
 line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
@@ -272,14 +272,14 @@ color: #757575;
 
 .team_2 {
   box-sizing: border-box;
-  width: 370px;
+  width: 350px;
 height: 404px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
 
 .team_2 img {
-  width: 370px;
+  width: 300px;
   height: 294px;
 }
 
