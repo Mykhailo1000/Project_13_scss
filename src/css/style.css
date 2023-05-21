@@ -41,13 +41,9 @@ span {
   display: flex;
   justify-content: space-between;
 }
-header {
-  height: 80px;
-  padding: 24px 0px 25px 0px;
-}
 .promo {
   padding: 200px 0px;
-  background-color: #2f303a;
+  background: url(../img/Img.png) center/cover no-repeat;
 }
 .promo_title {
   color: aliceblue;
@@ -301,3 +297,20 @@ border: 1px solid #EEEEEE;
   line-height: 36px
 }
 
+.posttiii {
+  text-align: center;
+}
+
+.postiini_client {
+  position: absolute;
+  width: 1170px;
+  height: 184px;
+  left: 215px;
+  top: 2398px;
+  gap: 6px;
+  display: flex;
+}
+
+.boxxx{
+  border:rgba(255, 255, 255, 0.6)
+}
