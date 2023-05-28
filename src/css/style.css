@@ -269,7 +269,6 @@ color: #757575;
 .team_2 {
   box-sizing: border-box;
   width: 350px;
-height: 404px;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
 }
@@ -302,15 +301,37 @@ border: 1px solid #EEEEEE;
 }
 
 .postiini_client {
-  position: absolute;
   width: 1170px;
   height: 184px;
-  left: 215px;
-  top: 2398px;
   gap: 6px;
   display: flex;
 }
 
 .boxxx{
   border:rgba(255, 255, 255, 0.6)
+}
+
+
+.team_social {
+  display: flex;
+
+}
+
+.team_social li {
+  background: #FFFFFF;
+  height: 44px;
+  width: 44px;
+  position: relative;
+  border-radius: 100%;
+}
+
+.team_social li>a>svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.team_social li:hover {
+  background-color:#2196f3;
 }
