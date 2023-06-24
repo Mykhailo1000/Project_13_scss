@@ -64,28 +64,22 @@ h1 {
 }
 .btr {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
-  background: #2196f3;
+  position: absolute;
+  width: 216px;
+  height: 50px;
+  left: 594px;
+  top: 427px;
+  
+  background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
+  color: #FFFFFF;
+  border: none;
 }
 .feature_items {
   display: flex;
-  gap: 6px;
+  padding: 0px;
+  justify-content: space-between;
   align-items: flex-start;
   
 }
@@ -239,14 +233,10 @@ color: #757575;
 .deckr {
   margin-top:20px;
 }
-.feature_items {
-  gap: 6px;
-  flex-wrap: wrap;
-}
 
-.tinu {
+/* .tinu {
   box-shadow: 10px 10px 20px 10px green;
-}
+} */
 
 .animations {
   transition: all 1s ease 0s;
@@ -300,13 +290,6 @@ border: 1px solid #EEEEEE;
   text-align: center;
 }
 
-.postiini_client {
-  width: 1170px;
-  height: 184px;
-  gap: 6px;
-  display: flex;
-}
-
 .boxxx{
   border:rgba(255, 255, 255, 0.6)
 }
@@ -334,4 +317,99 @@ border: 1px solid #EEEEEE;
 
 .team_social li:hover {
   background-color:#2196f3;
+}
+
+.contacts {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.contact_us {
+  display: flex;
+  padding: 0px;
+  gap: 10px;
+}
+
+.contact_us li>a {
+  background: rgba(255, 255, 255, 0.1);
+  display: block;
+  height: 44px;
+  width: 44px;
+  position: relative;
+  border-radius: 100%;
+}
+
+.contact_us li>a>svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.contact_us a:hover {
+  background-color:#2196f3;
+}
+
+.contact_title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+
+  
+}
+
+.footer_wrapper {
+  display: flex;
+  gap: 70px;
+}
+
+
+.postiini_client { 
+  display: flex;
+  width: 1170px;
+  height: 184px;
+  gap: 6px;
+  justify-content: space-around;
+  list-style: none;
+  padding: 50px 0px 94px;
+}
+
+.customers a {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  padding: 16px 32px;
+
+}
+
+.customers_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.customers a:hover, .customers a:hover path {
+  border-color: #2196F3;
+  fill: #2196F3;
+}
+
+.title_costum {
+  font-family: Roboto;
+  text-align: center;
 }
