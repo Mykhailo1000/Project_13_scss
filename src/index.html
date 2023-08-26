@@ -25,17 +25,19 @@
                 </nav>
             </div>
              <div class="menu_contact">
-                <img src="./svg/envelope.svg" alt="404">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <img src="./svg/smartphone.svg" alt="404">
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <img class="menu_contact_svg_email" src="./svg/envelope.svg" alt="404">
+                <a class="menu_contact_email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <img class="menu_contact_svg_tel" src="./svg/smartphone.svg" alt="404">
+                <a class="menu_contacts_tel" href="tel:+380961111111">+38 096 111 11 11</a>
              </div>
+            </div>
+        </div>
     </header>
     <main>
         <section class="promo">
                 <h1 class="promo_title">Ефективні рішення для <br>
                     вашого бізнесу</h1>
-                <button class="btr">Замовити послугу</button>
+                <button class="btr" data-open-modal>Замовити послугу</button>
         </section>
         <section class="feature">
             <div class="container">
@@ -462,7 +464,14 @@
             </ul></div></div>
     </div>
     </footer>
-    <script src="../JS/wow.min.js"></script>
-    <script src="../JS/Script.js"></script>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button class="modal_close" data-close-modal>
+                &times;
+            </button>
+        </div>
+    </div>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
