@@ -1,8 +1,27 @@
+a {
+  text-decoration: none;
+}
 li {
-    text-decoration: none;
-  }
-  
-  .container {
-    max-width: 1140px;
-    margin: 0 auto;
-  }
+  list-style: none;
+  padding: 0;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.animations {
+  transition: all 1s ease 0s;
+  background-color: peru;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  align-items: center;
+  justify-content: center;
+}
+.animations:hover {
+  transform: rotate3d(0, 10, 5, 50deg) translate3d(10px, 50px, 50px);
+}

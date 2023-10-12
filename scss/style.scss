@@ -3,6 +3,8 @@
 @import "./units/mixing";
 @import "./units/placeholder";
 @import "./units/variable";
+@import "./units/general";
+@import "./units/rezet";
     /* components */
 @import "./components/header";
 @import "./components/promo";
@@ -11,3 +13,5 @@
 @import "./components/team";
 @import "./components/clients";
 @import "./components/footer";
+@import "./components/modal";
+@import "./components/filters"
