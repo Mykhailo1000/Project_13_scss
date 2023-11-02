@@ -18,59 +18,30 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header_bloks">
-          <div class="header_block">
+        <div class="header__bloks">
+          <div class="header__block">
             <a href="/"
-              ><h2 class="logo"><span>Web</span>Studio</h2></a
+              ><h2 class="header__logo"><span>Web</span>Studio</h2></a
             >
             <nav>
-              <ul class="menu_link">
-                <li class="menu_item">
-                  <a class="contacts" href="./index.html">Студія</a>
-                </li>
-                <li class="menu_item menu_link_active">
-                  <a class="contacts" href="./portfolio.html">Портфоліо</a>
-                </li>
-                <li class="menu_item">
-                  <a class="contacts" href="/">Контакти</a>
-                </li>
+              <ul class="header__menu">
+                <li class="header__item"><a class="header__link" href="./index.html">Студія</a></li>
+                <li class="header__item"><a class="header__link--active header__link" href="./portfolio.html">Портфоліо</a></li>
+                <li class="header__item"><a class="header__link" href="/">Контакти</a></li>
               </ul>
             </nav>
           </div>
-          <div class="menu_contact">
-            <a class="menu_contact_email" href="mailto:info@devstudio.com"
-              ><svg
-                width="16"
-                height="12"
-                viewBox="0 0 16 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0V0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11V11Z"
-                  fill="#757575"
-                />
-              </svg>
-              info@devstudio.com</a>
-
-            <a class="menu_contacts_tel" href="tel:+380961111111"
-              ><svg
-                width="10"
-                height="16"
-                viewBox="0 0 10 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
-                  fill="#757575"
-                />
-                <path
-                  d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.5816 1.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z"
-                  fill="#757575"
-                />
-              </svg>
-              +38 096 111 11 11</a
-            >
+          <div class="header__menu_contact">
+            <a class="header__menu_contact_email" href="mailto:info@devstudio.com"
+              ><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0V0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11V11Z" fill="#757575"/>
+                </svg> info@devstudio.com</a>
+              
+            <a class="header__menu_contact_tel" href="tel:+380961111111"
+              ><svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z" fill="#757575"/>
+                <path d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.5816 1.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z" fill="#757575"/>
+                </svg> +38 096 111 11 11</a>
           </div>
         </div>
       </div>
@@ -86,10 +57,10 @@
         </ul>
       </div>
     </main>
-    <section class="">
+    <section class="feature">
       <div class="container">
         <ul class="feature_items">
-          <li class="feuture_item">
+          <li class="feature_item">
             <img
               class="tinu, animations"
               src="./src/img/laptop_22.png"
@@ -100,42 +71,42 @@
               <h4>Веб-сайт</h4>
             </div>
           </li>
-          <li class="feuture_item">
+          <li class="feature_item">
             <img
               class="tinu, animations"
               src="./src/img/baskeball222.png"
               alt="404"
             />
-            <div class="deckr">
+            <div class="feature_deckr">
               <a href="#">Постер New Orlean vs Golden Star</a>
               <h4>Дизайн</h4>
             </div>
           </li>
-          <li class="feuture_item">
+          <li class="feature_item">
             <img
               class="tinu, animations"
               src="./src/img/seafood222.png"
               alt="404"
             />
-            <div class="deckr">
+            <div class="feature_deckr">
               <a href="#">Ресторан Seafood</a>
               <h4>Додаток</h4>
             </div>
           </li>
         </ul>
         <ul class="feature_items">
-          <li class="feuture_item">
+          <li class="feature_item">
             <img
               class="tinu, animations"
               src="./src/img/headphone222.png"
               alt="404"
             />
-            <div class="deckr">
+            <div class="feature_deckr">
               <a href="#">Проєкт Prime</a>
               <h4>Маркетинг</h4>
             </div>
           </li>
-          <li class="feuture_item">
+          <li class="feature_item">
             <img
               class="tinu, animations"
               src="./src/img/boxes2222.png"
@@ -146,48 +117,48 @@
               <h4>Додаток</h4>
             </div>
           </li>
-          <li class="feuture_item">
+          <li class="feature_item">
             <img
               class="tinu, animations"
               src="./src/img/screen22.png"
               alt="404"
             />
-            <div class="deckr">
+            <div class="feature_deckr">
               <a href="#">Inspiration has no Borders</a>
               <h4>Веб-сайт</h4>
             </div>
           </li>
         </ul>
         <ul class="feature_items">
-          <li class="feuture_item">
+          <li class="feature_item">
             <img
               class="tinu, animations"
               src="./src/img/book22.png"
               alt="404"
             />
-            <div class="deckr">
+            <div class="feature_deckr">
               <a href="#">Видання Limited Edition</a>
               <h4>Дизайн</h4>
             </div>
           </li>
-          <li class="feuture_item">
+          <li class="feature_item">
             <img
               class="tinu, animations"
               src="./src/img/lab222.png"
               alt="404"
             />
-            <div class="deckr">
+            <div class="feature_deckr">
               <a href="#">Проєкт LAB</a>
               <h4>Маркетинг</h4>
             </div>
           </li>
-          <li class="feuture_item">
+          <li class="feature_item">
             <img
               class="tinu, animations"
               src="./src/img/busus22.png"
               alt="404"
             />
-            <div class="deckr">
+            <div class="feature_deckr">
               <a href="#">Growing Business</a>
               <h4>Додаток</h4>
             </div>
@@ -199,74 +170,55 @@
       <div class="container">
         <div class="footer_wrapper">
           <div class="footer_adress">
-            <a href="/"
-              ><h2 class="logo"><span>Web</span>Studio</h2></a
-            >
+            <a href="/"><h2 class="logo"><span>Web</span>Studio</h2></a>
             <ul class="adress">
               <li>
-                <a
-                  class="footer_address"
-                  href="https://goo.gl/maps/6GUtXnjzR2LR9Hb4A"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                <a class="footer_address" href="https://goo.gl/maps/6GUtXnjzR2LR9Hb4A">м. Київ, пр-т Лесі Українки, 26</a>
               </li>
               <li>
-                <a class="footer_email" href="mailto:info@devstudio.com"
-                  >info@example.com</a
-                >
+                <a class="footer_email" href="mailto:info@devstudio.com">info@example.com</a>
               </li>
               <li>
-                <a class="footer_telephone" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a class="footer_telephone" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </div>
           <div class="footer_contacts">
-            <h3 class="contact_title">ПРИЄДНУЙТЕСЬ</h3>
-            <ul class="contact_us">
-              <li class="team_apps_link">
+            <h3 class="footer_title">ПРИЄДНУЙТЕСЬ</h3>
+            <ul class="footer_us">
+              <li class="footer_team_apps_link">
                 <a href="#">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
-              <li class="team_apps_link">
+              <li class="footer_team_apps_link">
                 <a href="#">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
-              <li class="team_apps_link">
+              <li class="footer_team_apps_link">
                 <a href="#">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
-              <li class="team_apps_link">
+              <li class="footer_team_apps_link">
                 <a href="#">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="telegram">
-            <h2 class="telegram_title">Підпишіться на розсилку</h2>
-            <div class="telegram_box">
-              <input type="email" placeholder="E-mail" />
-              <button class="telegram_btn">
-                Підписатися
-                <svg
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M24.525 0L0 13.5L7.83772 16.3407L19.9266 5.25002L10.7314 17.3896L10.7389 17.3923L10.7297 17.3896V24.0001L15.1251 18.982L20.693 21.0001L24.525 0Z"
-                    fill="white"
-                  />
+          <div class="footer_telegram">
+            <h2 class="footer_telegram_title">Підпишіться на розсилку</h2>
+          <div class="footer_telegram_box">
+            <input type="email" placeholder="E-mail" />
+            <button class="footer_telegram_btn">
+              Підписатися
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.525 0L0 13.5L7.83772 16.3407L19.9266 5.25002L10.7314 17.3896L10.7389 17.3923L10.7297 17.3896V24.0001L15.1251 18.982L20.693 21.0001L24.525 0Z" fill="white"/>
                 </svg>
-              </button>
-            </div>
+            </button>
+          </div>
           </div>
         </div>
       </div>

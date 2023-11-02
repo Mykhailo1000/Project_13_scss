@@ -1,32 +1,27 @@
 .promo {
-  padding: 200px 0px;
-  background: url(../src/img/Img.png) center/cover no-repeat;
-}
-
-.promo_title {
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 60px; /* 136.364% */
-  letter-spacing: 2.64px;
-  text-transform: uppercase;
-}
-
-.btr {
-  font-family: "Roboto";
-  position: absolute;
-  width: 216px;
-  height: 50px;
-  left: 594px;
-  top: 427px;
-
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: #ffffff;
-  border: none;
-  margin-top: 30px;
+	padding: 200px 0px;
+	background: linear-gradient(rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)), url(../../src/img/Img.png);
+	&__title {
+		color: $title;
+		text-align: center;
+		font-size: 44px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 60px;
+		letter-spacing: 2.64px;
+		text-transform: uppercase;
+	}
+	&__btn {
+		position: absolute;
+		width: 216px;
+		height: 50px;
+		left: 594px;
+		top: 427px;
+		background-color: $btn;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+		color: $title;
+		border: none;
+		margin-top: 30px;
+	}
 }

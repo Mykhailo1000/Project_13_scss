@@ -1,174 +1,140 @@
 .footer {
   padding: 60px 0 60px 0;
-  background: #2f303a;
-}
-
-.footer_contacts {
-  margin-top: 12px;
-}
-
-.footer_wrapper {
-  display: flex;
-  gap: 70px;
-}
-
-.footer_address {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: #ffffff;
-}
-
-.footer_email {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer_telephone {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.contact_title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
-.contact_us {
-  display: flex;
-  padding: 0px;
-  gap: 10px;
-}
-
-.contact_us li > a {
-  background: rgba(255, 255, 255, 0.1);
-  display: block;
-  height: 44px;
-  width: 44px;
-  position: relative;
-  border-radius: 100%;
-}
-
-.contact_us li > a > svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.contact_us a:hover,
-.contact_us a:hover path {
-  fill: #ffffff;
-  background-color: #2196f3;
-}
-
-.team_apps_link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  position: relative;
-  border-radius: 100%;
-}
-
-.team_apps_link i {
-  color: #afb1b8;
-  font-size: 22px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.team_apps_link:hover i {
-  color: #fff;
-}
-
-.telegram_title {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  margin-top: 12px;
-}
-
-.telegram input[type="email"] {
-  margin: 0;
-  padding: 15px 0 15px 16px;
-  display: flex;
-  width: 358px;
-  height: 50px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 125% */
-  letter-spacing: 0.48px;
-
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(33, 150, 243, 0);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-.telegram_btn {
-  display: flex;
-  padding: 10px 28px 10px 28px;
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px; /* 187.5% */
-  letter-spacing: 0.96px;
-
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border: none;
-  align-items: center;
-  gap: 10px;
-}
-
-.telegram_box {
-  display: flex;
-  gap: 12px;
-  margin-top: 20px;
+  background: $background;
+  &__logo {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+  }
+  &__contacts {
+    margin-top: 12px;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 70px;
+  }
+  &__address {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $address;
+  }
+  &__email_telephone {
+    @extend %footer__email_telephone;
+  }
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title;
+  }
+  &__us {
+    display: flex;
+    padding: 0px;
+    gap: 10px;
+    li > a {
+      background: rgba(255, 255, 255, 0.1);
+      display: block;
+      height: 44px;
+      width: 44px;
+      position: relative;
+      border-radius: 100%;
+      > svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  a:hover,
+  &__us a:hover path {
+    fill: $us;
+    color: $hover;
+  }
+  &__team_apps_link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    border-radius: 100%;
+    &:hover i {
+      color: $hover_i;
+    }
+    i {
+      color: $team_apps_link_i;
+      font-size: 22px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      color: $hover_i;
+      background-color: $hover;
+    }
+  }
+  &__telegram_title {
+    color: $telegram_title;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-top: 12px;
+  }
+  &__telegram input[type="email"] {
+    margin: 0;
+    padding: 15px 0 15px 16px;
+    display: flex;
+    width: 358px;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  &__telegram_btn {
+    display: flex;
+    padding: 10px 28px 10px 28px;
+    color: $telegram_btn;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: $telegram_btn_background;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    align-items: center;
+    gap: 10px;
+  }
+  &__telegram_box {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
 }
