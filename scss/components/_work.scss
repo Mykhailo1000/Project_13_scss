@@ -8,13 +8,6 @@
 		margin-top: 50px;
 	}
 	&__title {
-		font-style: normal;
-		font-weight: 700;
-		font-size: 50px;
-		line-height: 42px;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: $title;
-		align-items: center;
+		@extend %titles;
 	}
 }

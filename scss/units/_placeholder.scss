@@ -35,3 +35,22 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+%titles {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $promo_title;
+  align-items: center;
+}
+%footer__telegram_title {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+  color: $title;
+}

@@ -3,13 +3,7 @@
   min-height: 708px;
   padding: 94px 0;
   &__title {
-    color: $promo_title;
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
+		@extend %titles;
   }
   &__card {
     width: 270px;
