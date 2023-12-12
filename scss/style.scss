@@ -1,17 +1,19 @@
-/* units */
-@import "./units/color";
-@import "./units/mixing";
-@import "./units/placeholder";
-@import "./units/variable";
-@import "./units/general";
-@import "./units/rezet";
-/* components */
+@import "./utils/color";
+@import "./utils/general";
+@import "./utils/mixing";
+@import "./utils/placeholder";
+@import "./utils/rezet";
+@import "./utils/variable";
+
 @import "./components/header";
 @import "./components/promo";
 @import "./components/feature";
-@import "./components/work";
-@import "./components/team";
+@import "./components/cards";
 @import "./components/customers";
-@import "./components/footer";
-@import "./components/modal";
 @import "./components/filters";
+@import "./components/footer" ;
+@import "./components/modal";
+@import "./components/team";
+@import "./components/variable";
+@import "./components/work";
+@import "./components/drawer";

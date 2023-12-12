@@ -5,15 +5,10 @@ li {
   list-style: none;
   padding: 0;
 }
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
+
 .animations {
   transition: all 1s ease 0s;
   background-color: peru;
-  height: 150px;
-  width: 150px;
   display: flex;
   color: #fff;
   text-transform: uppercase;

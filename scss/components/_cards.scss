@@ -1,0 +1,37 @@
+.cards {
+  &__list {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__item {
+    box-sizing: border-box;
+    width: 370px;
+    height: 404px;
+    background: $card_item_bg;
+    border: 1px solid $card_item_border;
+  }
+  &__descr {
+    margin-top: 20px;
+  }
+  &__link {
+    margin-left: 24px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: $card_link;
+  }
+  &__name {
+    margin-top: 4px;
+    margin-left: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: $card_name;
+  }
+}

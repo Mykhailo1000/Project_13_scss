@@ -1,163 +1,174 @@
 .header {
-  height: auto;
-  &__bloks {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  z-index: 50;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+
+  top: 0;
+  @media (min-width: 320px) {
+    height: 60px;
+    padding: 16px 0;
+  }
+  @media (min-width: 768px) {
+    height: 80px;
+    padding: 21px 0;
+  }
+  @media (min-width: 1200px) {
+    height: 80px;
+    padding: 26px 0;
   }
   &__logo {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
     line-height: 31px;
+    /* identical to box height */
     letter-spacing: 0.03em;
-    color: $logo;
+    color: black;
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
-  &__block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 510px;
+  &__link::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    transition: 0.9s all;
+
+    position: absolute;
+    top: 40px;
+    transform: rotateY(90deg);
   }
-  &__link:after {
-    bottom: -26px;
-    color: $link;
-    position: relative;
+  &__link:hover::after {
+    content: "";
+    background-color: #2196f3;
+    border: 2px;
     transform: rotate(0deg);
   }
-  &__menu_contact {
-    display: flex;
-    gap: 30px;
-    align-items: center;
+  &__link:hover {
+    color: #2196f3;
+  }
+  &__tel {
+    @include text(14px, 0.28px, 500);
+  }
+  &__email {
+    @include text(14px, 0.28px, 500);
+  }
+  &__link::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    transition: 0.9s all;
+
+    position: absolute;
+    top: 40px;
+    transform: rotateY(90deg);
+  }
+  &__link:hover::after {
+    content: "";
+    background-color: #2196f3;
+    border: 2px;
+    transform: rotate(0deg);
+  }
+  &__link:hover {
+    color: #2196f3;
   }
 
-  &__menu {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
-
-  &__contacts {
+  &__link {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: $contacts;
-  }
-  &__contact_us {
-    display: flex;
-    padding: 0px;
-    gap: 10px;
-    li > a {
-      background: rgba(255, 255, 255, 0.1);
-      display: block;
-      height: 44px;
-      width: 44px;
-      position: relative;
-      border-radius: 100%;
-      > svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-    a:hover path {
-      fill: $contact_us;
-      background-color: $contact_us_link;
-    }
-  }
-  &__contact_title {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $contact_title;
-  }
-  &__link::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $link_after;
-    bottom: -28px;
-    position: absolute;
-    transform: rotateY(90deg);
-    transition: 0.5s;
-  }
-  &__link:hover::after {
-    transform: rotate(0deg);
-    content: "";
-  }
-  &__link:hover {
-    color: $link_hover;
-  }
-  &__link {
     position: relative;
-    color: $linkk;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    &--active {
-      color: $link_active;
-      &:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: $link_background;
-        bottom: -28px;
-        position: absolute;
-        transform: rotateY(0);
-        transition: 0.5s;
-      }
-    }
-  }
-  &__menu_contact_email {
-    color: $menu_contact;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    svg {
-      margin-right: 10px;
-    }
-    &:hover path {
-      fill: $menu_contact_path;
-    }
+
+    color: #212121;
   }
 
-  &__menu_contact_tel {
-    color: $menu_contact;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    svg {
-      margin-right: 10px;
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    @media (min-width: 768px) {
+      gap: 88px;
     }
-    &:hover path {
-      fill: $menu_contact_path;
+    @media (min-width: 1200px) {
+      gap: 93px;
     }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    padding: 0;
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__contact {
+    display: flex;
+
+    align-items: center;
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      gap: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    @media (min-width: 1200px) {
+      gap: 30px;
+      flex-direction: row;
+    }
+
+    :hover {
+      color: $link_hover;
+    } 
   }
 
-  &__menu_contact_tel:hover {
-    color: $menu_contact_hover;
+  &__main {
+    display: flex;
+    justify-content: center;
+    width: 1600px;
   }
-  &__menu_contact_email:hover {
-    color: $menu_contact_hover;
+  &_menu {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__tel > svg {
+    margin-right: 10px;
+  }
+  &__tel > i {
+    margin-right: 10px;
+  }
+  &__email > svg {
+    margin-right: 10px;
+  }
+  &__email > i {
+    margin-right: 10px;
   }
   &__span {
     color: $span;

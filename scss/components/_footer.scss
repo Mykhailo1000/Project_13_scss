@@ -26,10 +26,21 @@
     color: $address;
   }
   &__email_telephone {
-    @extend %footer__email_telephone;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
   }
   &__title {
-    @extend %footer__telegram_title;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    color: $title;
   }
   &__us {
     display: flex;
@@ -78,7 +89,13 @@
     }
   }
   &__telegram_title {
-    @extend %footer__telegram_title;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    color: $title;
   }
   &__telegram input[type="email"] {
     margin: 0;
@@ -123,6 +140,6 @@
     margin-top: 20px;
   }
   &__span {
-      color: $span;
+    color: $span;
   }
 }

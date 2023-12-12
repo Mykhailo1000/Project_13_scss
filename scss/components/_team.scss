@@ -1,9 +1,11 @@
 .team {
-  background: $link_i;
-  min-height: 708px;
-  padding: 94px 0;
+  @media (min-width: 1200px) {
+    background: $link_i;
+    min-height: 708px;
+    padding: 94px 0;
+  }
   &__title {
-		@extend %titles;
+    @extend %titles;
   }
   &__card {
     width: 270px;
