@@ -27,7 +27,7 @@
       <div class="container">
         <div class="header__blocks">
           <div class="header__left">
-            <a class="header__blok" href="/">
+            <a class="header__block" href="/">
               <h2 class="header__logo">
                 <span class="header__span">Web</span>Studio
               </h2>
@@ -47,7 +47,7 @@
               </ul>
             </nav>
           </div>
-          <div class="header__contact">
+          <div class="header__contacts">
             <a class="header__tel" href="tel:+380961111111">
               <i class="fa-solid fa-mobile"></i>
               +38 096 111 11 11</a
@@ -74,6 +74,85 @@
               />
             </svg>
           </button>
+        </div>
+        <div class="drawer js-menu-container">
+          <button class="drawer__btn js-close-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z"
+                fill="#212121"
+              />
+            </svg>
+          </button>
+          <nav class="drawer__nav">
+            <ul class="drawer__menu">
+              <li class="drawer__item">
+                <a
+                  class="drawer__link header__link"
+                  data-page="page1"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="drawer__item">
+                <a
+                  class="drawer__link header__link"
+                  data-page="page2"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="drawer__item">
+                <a
+                  class="drawer__link header__link"
+                  data-page="page3"
+                  href="#contacts"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="drawer__box">
+            <div class="drawer__contacts">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header__contacts--link envelope drawer__contacts--envelope"
+              >
+                <i class="fa-regular fa-envelope fa-bounce"></i>
+
+                info@devstudio.com</a
+              >
+              <a
+                href="tel:+380961111111"
+                class="header__contacts--link drawer__contacts--tel"
+              >
+                <i class="fa-solid fa-mobile-screen-button fa-shake"></i>
+
+                +38 096 111 11 11</a
+              >
+            </div>
+
+            <ul class="drawer__list">
+              <li class="drawer__social">
+                <a href="#" class="drawer__link--social">Instagram</a>
+              </li>
+              <li class="drawer__social">
+                <a href="#" class="drawer__link--social">Twitter</a>
+              </li>
+              <li class="drawer__social">
+                <a href="#" class="drawer__link--social">Facebook</a>
+              </li>
+              <li class="drawer__social">
+                <a href="#" class="drawer__link--social">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
