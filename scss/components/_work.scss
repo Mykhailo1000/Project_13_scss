@@ -1,5 +1,9 @@
 .work {
 	padding: 94px 0 94px;
+	@media (max-width: 768px) {
+		display: none;
+		padding: 0;
+	}
 	&__list {
 		display: flex;
 		justify-content: center;

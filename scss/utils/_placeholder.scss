@@ -1,5 +1,5 @@
-%team__subtitle {
-  color: $subtitle;
+%team_subtitle {
+  color: $grey;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -7,9 +7,9 @@
   line-height: normal;
   letter-spacing: 0.48px;
   margin-top: 10px;
-}
-%team__name {
-  color: $name;
+} 
+%team_name {
+  color: $black;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -25,14 +25,14 @@
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: $promo_title;
+  color: $black;
   align-items: center;
 }
 %btn {
   border-radius: 4px;
-  background: #2196f3;
+  background: $blue;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
+  color: $white;
   text-align: center;
   font-family: Roboto;
   font-size: 16px;

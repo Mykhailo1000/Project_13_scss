@@ -17,154 +17,164 @@
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
-    <header class="header"> 
-      <div class="container"> 
-        <div class="header__blocks"> 
-          <div class="header__left"> 
-            <a class="header__blok" href="/"> 
-              <h2 class="header__logo"> 
-                <span class="header__span">Web</span>Studio 
-              </h2> 
-            </a> 
- 
-            <nav class="header__nav"> 
-              <ul class="header__list"> 
-                <li class="header__item"> 
-                  <a class="header__link" href="index.html">Студія</a> 
-                </li> 
-                <li class="header__item"> 
-                  <a class="header__link" href="portfolio.html">Портфоліо</a> 
-                </li> 
-                <li class="header__item"> 
-                  <a class="header__link" href="/">Контакти</a> 
-                </li> 
-              </ul> 
-            </nav> 
-          </div> 
-          <div class="header__contact"> 
-            <a class="header__tel" href="tel:+380961111111"> 
-              <i class="fa-solid fa-mobile"></i> 
-              +38 096 111 11 11</a 
-            > 
- 
-            <a class="header__email" href=" mailto:info@devstudio.com "> 
-              <i class="fa-regular fa-envelope"></i> 
-              info@devstudio.com</a 
-            > 
-          </div> 
-          <button class="menu-toggle js-open-menu"> 
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              width="40" 
-              height="40" 
-              viewBox="0 0 40 40" 
-              fill="none" 
-            > 
-              <path 
-                fill-rule="evenodd" 
-                clip-rule="evenodd" 
-                d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" 
-                fill="black" 
-              /> 
-            </svg> 
-          </button> 
+    <header
+      class="header animate__animated animate__fadeInRight wow"
+      data-wow-duration="2s"
+    >
+      <div class="container">
+        <div class="header__blocks">
+          <div class="header__left">
+            <a class="header__block" href="/">
+              <h2 class="header__logo">
+                <span class="header__span">Web</span>Studio
+              </h2>
+            </a>
+
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a class="header__link" href="index.html">Студія</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="portfolio.html">Портфоліо</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="/">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__contacts">
+            <a class="header__tel" href="tel:+380961111111">
+              <i class="fa-solid fa-mobile"></i>
+              +38 096 111 11 11</a
+            >
+
+            <a class="header__email" href=" mailto:info@devstudio.com ">
+              <i class="fa-regular fa-envelope"></i>
+              info@devstudio.com</a
+            >
+          </div>
+          <button class="menu-toggle js-open-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
+                fill="black"
+              />
+            </svg>
+          </button>
         </div>
-        <div class="drawer"> 
-          <button class="drawer__btn"> 
-            <svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              width="40" 
-              height="40" 
-              viewBox="0 0 40 40" 
-              fill="none" 
-            > 
-              <path 
-                d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" 
-                fill="#212121" 
-              /> 
-            </svg> 
-          </button> 
-          <nav class="drawer__nav"> 
-            <ul class="drawer__menu"> 
-              <li class="drawer__item"> 
-                <a 
-                  class="drawer__link header__link" 
-                  data-page="page1" 
-                  href="./index.html" 
-                  >Студія</a 
-                > 
-              </li> 
-              <li class="drawer__item"> 
-                <a 
-                  class="drawer__link header__link" 
-                  data-page="page2" 
-                  href="./portfolio.html" 
-                  >Портфоліо</a 
-                > 
-              </li> 
-              <li class="drawer__item"> 
-                <a 
-                  class="drawer__link header__link" 
-                  data-page="page3" 
-                  href="#contacts" 
-                  >Контакти</a 
-                > 
-              </li> 
-            </ul> 
-          </nav> 
-          <div class="drawer__box"> 
-            <div class="drawer__contacts"> 
-              <a 
-                href="mailto:info@devstudio.com" 
-                class="header__contacts--link envelope drawer__contacts--envelope" 
-              > 
-                <i class="fa-regular fa-envelope fa-bounce"></i> 
- 
-                info@devstudio.com</a 
-              > 
-              <a 
-                href="tel:+380961111111" 
-                class="header__contacts--link drawer__contacts--tel" 
-              > 
-                <i class="fa-solid fa-mobile-screen-button fa-shake"></i> 
- 
-                +38 096 111 11 11</a 
-              > 
-            </div> 
- 
-            <ul class="drawer__list"> 
-              <li class="drawer__social"> 
-                <a href="#" class="drawer__link--social">Instagram</a> 
-              </li> 
-              <li class="drawer__social"> 
-                <a href="#" class="drawer__link--social">Twitter</a> 
-              </li> 
-              <li class="drawer__social"> 
-                <a href="#" class="drawer__link--social">Facebook</a> 
-              </li> 
-              <li class="drawer__social"> 
-                <a href="#" class="drawer__link--social">LinkedIn</a> 
-              </li> 
-            </ul> 
-          </div> 
+        <div class="drawer js-menu-container">
+          <button class="drawer__btn js-close-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z"
+                fill="#212121"
+              />
+            </svg>
+          </button>
+          <nav class="drawer__nav">
+            <ul class="drawer__menu">
+              <li class="drawer__item">
+                <a
+                  class="drawer__link header__link"
+                  data-page="page1"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="drawer__item">
+                <a
+                  class="drawer__link header__link"
+                  data-page="page2"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="drawer__item">
+                <a
+                  class="drawer__link header__link"
+                  data-page="page3"
+                  href="#contacts"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="drawer__box">
+            <div class="drawer__contacts">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header__contacts--link envelope drawer__contacts--envelope"
+              >
+                <i class="fa-regular fa-envelope fa-bounce"></i>
+
+                info@devstudio.com</a
+              >
+              <a
+                href="tel:+380961111111"
+                class="header__contacts--link drawer__contacts--tel"
+              >
+                <i class="fa-solid fa-mobile-screen-button fa-shake"></i>
+
+                +38 096 111 11 11</a
+              >
+            </div>
+
+            <ul class="drawer__list">
+              <li class="drawer__social">
+                <a href="#" class="drawer__link--social">Instagram</a>
+              </li>
+              <li class="drawer__social">
+                <a href="#" class="drawer__link--social">Twitter</a>
+              </li>
+              <li class="drawer__social">
+                <a href="#" class="drawer__link--social">Facebook</a>
+              </li>
+              <li class="drawer__social">
+                <a href="#" class="drawer__link--social">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div> 
+      </div>
     </header>
     <main>
-      <section 
-      class="promo animate__animated animate__fadeInRight wow" 
-      data-wow-duration="2s" 
-    > 
-      <div class="promo__overlay"> 
-        <h1 class="promo__title"> 
-          ефективні рішення для<br /> 
-          вашого бізнесу 
-        </h1> 
-        <button class="promo__btn btn__open" data-open-modal> 
-          Замовити послугу 
-        </button>  
+      <section
+        class="promo animate__animated animate__fadeInRight wow"
+        data-wow-duration="2s"
+      >
+      <div class="promo__overlay">
+        <div class="container">
+
+            <h1 class="promo__title">
+              ефективні рішення для<br />
+              вашого бізнесу
+            </h1>
+            <button class="promo__btn btn__open" data-open-modal>
+              Замовити послугу
+            </button>
+          </div>
+        </div>
       </section>
-      <section class="feature">
+      <section
+        class="feature animate__animated animate__fadeInRight wow"
+        data-wow-duration="2s"
+      >
         <div class="container">
           <ul class="feature__list">
             <li class="feature__item">
@@ -385,7 +395,10 @@
           </ul>
         </div>
       </section>
-      <section class="work">
+      <section
+        class="work animate__animated animate__fadeInRight wow"
+        data-wow-duration="2s"
+      >
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
@@ -532,7 +545,10 @@
           </ul>
         </div>
       </section>
-      <section class="customers">
+      <section
+        class="customers animate__animated animate__fadeInRight wow"
+        data-wow-duration="2s"
+      >
         <div class="container">
           <h2 class="customers__title">Постійні Клієнти</h2>
           <ul class="customers__list">
@@ -550,12 +566,10 @@
                     clip-rule="evenodd"
                     d="M38 7L45.0078 13.6341L32 13.6265V45.8137H66V33.507L73 40.1338V7H38ZM65.6924 32.7283L45.8226 13.918H65.6924V32.7283ZM59.5231 41.1055H37.3801V19.4579H38.9453V39.6397H59.5231V41.1055ZM42.6089 50.0991L41.791 51.7837L40.9731 50.0991H40.2871L41.481 52.3452V53.6538H42.1011V52.3452L43.2925 50.0991H42.6089ZM43.6367 53.6538L43.9248 52.8262H45.3018L45.5923 53.6538H46.2368L44.8916 50.0991H44.3374L42.9946 53.6538H43.6367ZM44.6133 50.8535L45.1284 52.3281H44.0981L44.6133 50.8535ZM47.8701 52.2427C47.7806 52.3794 47.7358 52.5299 47.7358 52.6943C47.7358 52.9938 47.8408 53.2371 48.0508 53.4243C48.2624 53.6099 48.5439 53.7026 48.8955 53.7026C49.2471 53.7026 49.5498 53.6074 49.8037 53.417L50.0039 53.6538H50.6924L50.1699 53.0361C50.375 52.7562 50.4775 52.3973 50.4775 51.9595H49.9624C49.9624 52.1987 49.9128 52.416 49.8135 52.6113L49.1274 51.8008L49.3691 51.625C49.54 51.5013 49.6629 51.3776 49.7378 51.2539C49.8127 51.1286 49.8501 50.9919 49.8501 50.8438C49.8501 50.6191 49.7671 50.4312 49.6011 50.2798C49.4367 50.1268 49.2251 50.0503 48.9663 50.0503C48.6798 50.0503 48.452 50.1317 48.2827 50.2944C48.1134 50.4556 48.0288 50.6753 48.0288 50.9536C48.0288 51.0675 48.0557 51.1855 48.1094 51.3076C48.1647 51.4297 48.2616 51.5778 48.3999 51.752C48.1362 51.9408 47.9596 52.1043 47.8701 52.2427ZM49.4741 53.0288C49.3 53.1623 49.1128 53.229 48.9126 53.229C48.7352 53.229 48.5936 53.1777 48.4878 53.0752C48.382 52.9727 48.3291 52.8392 48.3291 52.6748C48.3291 52.4844 48.4268 52.3151 48.6221 52.167L48.6978 52.1133L49.4741 53.0288ZM48.8369 51.4541C48.6693 51.2474 48.5854 51.0757 48.5854 50.939C48.5854 50.8201 48.6196 50.7217 48.688 50.6436C48.7563 50.5654 48.8483 50.5264 48.9639 50.5264C49.0713 50.5264 49.16 50.5597 49.23 50.6265C49.3 50.6916 49.335 50.7705 49.335 50.8633C49.335 51.0033 49.2845 51.118 49.1836 51.2075L49.1079 51.2686L48.8369 51.4541ZM54.623 53.3853C54.8672 53.172 55.0072 52.8758 55.043 52.4966H54.4277C54.3952 52.7505 54.3179 52.932 54.1958 53.041C54.0737 53.1501 53.8914 53.2046 53.6489 53.2046C53.3836 53.2046 53.1818 53.1037 53.0435 52.9019C52.9067 52.7 52.8384 52.4071 52.8384 52.0229V51.708C52.8416 51.3288 52.9149 51.0415 53.0581 50.8462C53.203 50.6493 53.4097 50.5508 53.6782 50.5508C53.9093 50.5508 54.0843 50.6077 54.2031 50.7217C54.3236 50.834 54.3984 51.0179 54.4277 51.2734H55.043C55.0039 50.8844 54.8647 50.5833 54.6255 50.3701C54.3862 50.1569 54.0705 50.0503 53.6782 50.0503C53.3869 50.0503 53.1297 50.1195 52.9067 50.2578C52.6854 50.3962 52.5153 50.5931 52.3965 50.8486C52.2777 51.1042 52.2183 51.3996 52.2183 51.7349V52.0669C52.2231 52.394 52.2842 52.6813 52.4014 52.9287C52.5186 53.1761 52.6846 53.3674 52.8994 53.5024C53.1159 53.6359 53.3657 53.7026 53.6489 53.7026C54.0542 53.7026 54.3789 53.5968 54.623 53.3853ZM58.2534 52.8872C58.3739 52.6235 58.4341 52.3175 58.4341 51.9692V51.7715C58.4325 51.4248 58.3706 51.1213 58.2485 50.8608C58.1265 50.5988 57.9531 50.3986 57.7285 50.2603C57.5055 50.1203 57.2492 50.0503 56.9595 50.0503C56.6698 50.0503 56.4126 50.1211 56.188 50.2627C55.965 50.4027 55.7917 50.6053 55.668 50.8706C55.5459 51.1359 55.4849 51.4419 55.4849 51.7886V51.9888C55.4865 52.3289 55.5483 52.6292 55.6704 52.8896C55.7941 53.1501 55.9683 53.3511 56.1929 53.4927C56.4191 53.6326 56.6763 53.7026 56.9644 53.7026C57.2557 53.7026 57.5129 53.6326 57.7358 53.4927C57.9604 53.3511 58.133 53.1493 58.2534 52.8872ZM57.5918 50.8779C57.7415 51.0879 57.8164 51.3898 57.8164 51.7837V51.9692C57.8164 52.3696 57.7423 52.674 57.5942 52.8823C57.4478 53.0907 57.2378 53.1948 56.9644 53.1948C56.6942 53.1948 56.4826 53.0882 56.3296 52.875C56.1782 52.6618 56.1025 52.3599 56.1025 51.9692V51.7642C56.1058 51.3817 56.1823 51.0863 56.332 50.8779C56.4834 50.668 56.6925 50.563 56.9595 50.563C57.2329 50.563 57.4437 50.668 57.5918 50.8779Z"
                     fill="#AFB1B8"
-                  /></svg
-              ></a>
+                  /></svg></a>
             </li>
             <li>
-              <a href="/"
-                ><svg
+              <a href="/"><svg
                   width="106"
                   height="60"
                   viewBox="0 0 106 60"
@@ -638,14 +652,12 @@
                   />
                   <path
                     d="M72.1096 54.2675H72.9064V53.9954H72.1096V53.6445H72.9697V53.3724H71.7858V54.9719H73V54.6998H72.1096V54.2675Z"
-                    fill="#AFB1B8"
-                  />
+                    fill="#AFB1B8"/>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="/"
-                ><svg
+              <a href="/"><svg
                   width="106"
                   height="60"
                   viewBox="0 0 106 60"
@@ -742,8 +754,7 @@
                         result="shape"
                       />
                     </filter>
-                  </defs></svg
-              ></a>
+                  </defs></svg></a>
             </li>
             <li>
               <a href="/"
@@ -768,9 +779,7 @@
                   />
                   <path
                     d="M37.4177 42.4637H35.7302V44.2069H34.8513V39.9413H37.6286V40.6532H35.7302V41.7548H37.4177V42.4637ZM41.6423 42.1708C41.6423 42.5907 41.5681 42.9589 41.4196 43.2753C41.2712 43.5917 41.0583 43.8358 40.7809 44.0077C40.5056 44.1796 40.1891 44.2655 39.8317 44.2655C39.4782 44.2655 39.1628 44.1805 38.8854 44.0106C38.6081 43.8407 38.3932 43.5985 38.2409 43.2841C38.0886 42.9677 38.0114 42.6044 38.0095 42.1942V41.9833C38.0095 41.5634 38.0847 41.1942 38.235 40.8759C38.3874 40.5555 38.6013 40.3104 38.8766 40.1405C39.154 39.9686 39.4704 39.8827 39.8259 39.8827C40.1813 39.8827 40.4968 39.9686 40.7722 40.1405C41.0495 40.3104 41.2634 40.5555 41.4138 40.8759C41.5661 41.1942 41.6423 41.5624 41.6423 41.9803V42.1708ZM40.7516 41.9774C40.7516 41.5302 40.6716 41.1903 40.5114 40.9579C40.3513 40.7255 40.1227 40.6093 39.8259 40.6093C39.5309 40.6093 39.3034 40.7245 39.1432 40.955C38.9831 41.1835 38.902 41.5194 38.9001 41.9628V42.1708C38.9001 42.6063 38.9802 42.9442 39.1403 43.1844C39.3005 43.4247 39.5309 43.5448 39.8317 43.5448C40.1266 43.5448 40.3532 43.4296 40.5114 43.1991C40.6696 42.9667 40.7497 42.6288 40.7516 42.1854V41.9774ZM44.4929 43.0878C44.4929 42.9218 44.4343 42.7948 44.3171 42.7069C44.1999 42.6171 43.989 42.5233 43.6843 42.4257C43.3796 42.326 43.1384 42.2284 42.9606 42.1327C42.4763 41.871 42.2341 41.5184 42.2341 41.0751C42.2341 40.8446 42.2985 40.6395 42.4274 40.4598C42.5583 40.2782 42.7448 40.1366 42.987 40.035C43.2311 39.9335 43.5046 39.8827 43.8073 39.8827C44.112 39.8827 44.3835 39.9384 44.6218 40.0497C44.86 40.1591 45.0446 40.3143 45.1755 40.5155C45.3083 40.7167 45.3747 40.9452 45.3747 41.201H44.4958C44.4958 41.0057 44.4343 40.8544 44.3112 40.7469C44.1882 40.6376 44.0153 40.5829 43.7927 40.5829C43.5778 40.5829 43.4108 40.6288 43.2917 40.7206C43.1725 40.8104 43.113 40.9296 43.113 41.078C43.113 41.2167 43.1823 41.3329 43.321 41.4266C43.4616 41.5204 43.6677 41.6083 43.9391 41.6903C44.4391 41.8407 44.8034 42.0272 45.0319 42.2499C45.2604 42.4725 45.3747 42.7499 45.3747 43.0819C45.3747 43.451 45.235 43.7411 44.9557 43.952C44.6765 44.161 44.3005 44.2655 43.8278 44.2655C43.4997 44.2655 43.2009 44.2059 42.9313 44.0868C42.6618 43.9657 42.4557 43.8007 42.3132 43.5917C42.1725 43.3827 42.1022 43.1405 42.1022 42.8651H42.9841C42.9841 43.3358 43.2653 43.5712 43.8278 43.5712C44.0368 43.5712 44.1999 43.5292 44.3171 43.4452C44.4343 43.3593 44.4929 43.2401 44.4929 43.0878ZM49.1833 40.6532H47.8766V44.2069H46.9977V40.6532H45.7087V39.9413H49.1833V40.6532ZM52.2536 42.3583H50.5661V43.5009H52.5466V44.2069H49.6872V39.9413H52.5407V40.6532H50.5661V41.6698H52.2536V42.3583ZM54.6413 42.6454H53.9411V44.2069H53.0622V39.9413H54.6472C55.1511 39.9413 55.5397 40.0536 55.8132 40.2782C56.0866 40.5028 56.2233 40.8202 56.2233 41.2303C56.2233 41.5214 56.1599 41.7645 56.0329 41.9598C55.9079 42.1532 55.7175 42.3075 55.4616 42.4227L56.3845 44.1659V44.2069H55.4411L54.6413 42.6454ZM53.9411 41.9335H54.6501C54.8708 41.9335 55.0417 41.8778 55.1628 41.7665C55.2839 41.6532 55.3444 41.4979 55.3444 41.3007C55.3444 41.0995 55.2868 40.9413 55.1716 40.826C55.0583 40.7108 54.8835 40.6532 54.6472 40.6532H53.9411V41.9335ZM59.2673 42.704V44.2069H58.3884V39.9413H60.0524C60.3727 39.9413 60.654 39.9999 60.8962 40.1171C61.1403 40.2343 61.3278 40.4012 61.4587 40.618C61.5895 40.8329 61.655 41.078 61.655 41.3534C61.655 41.7714 61.5114 42.1014 61.2243 42.3436C60.9391 42.5839 60.5436 42.704 60.0378 42.704H59.2673ZM59.2673 41.9921H60.0524C60.2849 41.9921 60.4616 41.9374 60.5827 41.828C60.7057 41.7186 60.7673 41.5624 60.7673 41.3593C60.7673 41.1503 60.7057 40.9813 60.5827 40.8524C60.4597 40.7235 60.2897 40.6571 60.0729 40.6532H59.2673V41.9921ZM64.8278 42.3583H63.1403V43.5009H65.1208V44.2069H62.2614V39.9413H65.1149V40.6532H63.1403V41.6698H64.8278V42.3583ZM68.9059 40.6532H67.5993V44.2069H66.7204V40.6532H65.4313V39.9413H68.9059V40.6532ZM71.9763 42.3583H70.2888V43.5009H72.2692V44.2069H69.4099V39.9413H72.2634V40.6532H70.2888V41.6698H71.9763V42.3583ZM74.364 42.6454H73.6638V44.2069H72.7849V39.9413H74.3698C74.8737 39.9413 75.2624 40.0536 75.5358 40.2782C75.8093 40.5028 75.946 40.8202 75.946 41.2303C75.946 41.5214 75.8825 41.7645 75.7556 41.9598C75.6306 42.1532 75.4401 42.3075 75.1843 42.4227L76.1071 44.1659V44.2069H75.1638L74.364 42.6454ZM73.6638 41.9335H74.3727C74.5934 41.9335 74.7643 41.8778 74.8854 41.7665C75.0065 41.6532 75.0671 41.4979 75.0671 41.3007C75.0671 41.0995 75.0095 40.9413 74.8942 40.826C74.7809 40.7108 74.6061 40.6532 74.3698 40.6532H73.6638V41.9335ZM78.8288 43.0878C78.8288 42.9218 78.7702 42.7948 78.653 42.7069C78.5358 42.6171 78.3249 42.5233 78.0202 42.4257C77.7155 42.326 77.4743 42.2284 77.2966 42.1327C76.8122 41.871 76.57 41.5184 76.57 41.0751C76.57 40.8446 76.6345 40.6395 76.7634 40.4598C76.8942 40.2782 77.0807 40.1366 77.3229 40.035C77.5671 39.9335 77.8405 39.8827 78.1432 39.8827C78.4479 39.8827 78.7194 39.9384 78.9577 40.0497C79.196 40.1591 79.3806 40.3143 79.5114 40.5155C79.6442 40.7167 79.7106 40.9452 79.7106 41.201H78.8317C78.8317 41.0057 78.7702 40.8544 78.6472 40.7469C78.5241 40.6376 78.3513 40.5829 78.1286 40.5829C77.9138 40.5829 77.7468 40.6288 77.6276 40.7206C77.5085 40.8104 77.4489 40.9296 77.4489 41.078C77.4489 41.2167 77.5182 41.3329 77.6569 41.4266C77.7975 41.5204 78.0036 41.6083 78.2751 41.6903C78.7751 41.8407 79.1393 42.0272 79.3679 42.2499C79.5964 42.4725 79.7106 42.7499 79.7106 43.0819C79.7106 43.451 79.571 43.7411 79.2917 43.952C79.0124 44.161 78.6364 44.2655 78.1638 44.2655C77.8356 44.2655 77.5368 44.2059 77.2673 44.0868C76.9977 43.9657 76.7917 43.8007 76.6491 43.5917C76.5085 43.3827 76.4382 43.1405 76.4382 42.8651H77.32C77.32 43.3358 77.6013 43.5712 78.1638 43.5712C78.3727 43.5712 78.5358 43.5292 78.653 43.4452C78.7702 43.3593 78.8288 43.2401 78.8288 43.0878Z"
-                    fill="#AFB1B8"
-                  /></svg
-              ></a>
+                    fill="#AFB1B8"/></svg></a>
             </li>
             <li>
               <a href="/"
@@ -819,9 +828,7 @@
                   />
                   <path
                     d="M70.1075 42.0887C69.9421 43.929 70.0454 45.7813 70.4147 47.5966C77.1999 43.8793 84.8241 38.1355 84.5301 31.1939V30.589C79.6824 31.0856 75.1468 33.026 71.6204 36.112C70.7948 38.0244 70.2849 40.0387 70.1075 42.0887Z"
-                    fill="#AFB1B8"
-                  /></svg
-              ></a>
+                    fill="#AFB1B8"/></svg></a>
             </li>
             <li>
               <a href="/"
@@ -949,15 +956,16 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer
+      class="footer animate__animated animate__fadeInRight wow"
+      data-wow-duration="2s">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__adress">
             <a href="/"
               ><h2 class="footer__logo">
                 <span class="footer__span">Web</span>Studio
-              </h2></a
-            >
+              </h2></a>
             <ul class="footer__adress">
               <li>
                 <a
@@ -1016,8 +1024,7 @@
                   height="24"
                   viewBox="0 0 25 24"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M24.525 0L0 13.5L7.83772 16.3407L19.9266 5.25002L10.7314 17.3896L10.7389 17.3923L10.7297 17.3896V24.0001L15.1251 18.982L20.693 21.0001L24.525 0Z"
                     fill="white"
@@ -1029,7 +1036,11 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div
+      class="backdrop animate__animated animate__fadeInRight wow"
+      data-wow-duration="2s"
+      data-modal
+    >
       <div class="modal">
         <h2 class="modal_title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="form">
@@ -1075,14 +1086,15 @@
             >
           </label>
           <div class="div_btn">
-            <button class="form_btn">Відправит</button>
+            <button class="form_btn">Відправити</button>
           </div>
         </form>
         <button class="modal_close" data-close-modal>&times;</button>
       </div>
     </div>
-    <script src="../js/wow.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="./js/mobile_menu.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/script.js"></script>
     <script
       src="https://kit.fontawesome.com/3653d2ff1e.js"
       crossorigin="anonymous"

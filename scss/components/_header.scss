@@ -2,12 +2,11 @@
   z-index: 50;
   width: 100%;
   position: fixed;
-  background-color: #ffffff;
-
+  background-color: $white;
   top: 0;
   @media (min-width: 320px) {
     height: 60px;
-    padding: 16px 0;
+    padding: 10px 0;
   }
   @media (min-width: 768px) {
     height: 80px;
@@ -24,7 +23,7 @@
     line-height: 31px;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: black;
+    color: $black;
     @media (min-width: 768px) {
       font-size: 24px;
     }
@@ -45,12 +44,12 @@
   }
   &__link:hover::after {
     content: "";
-    background-color: #2196f3;
+    background-color: $blue;
     border: 2px;
     transform: rotate(0deg);
   }
   &__link:hover {
-    color: #2196f3;
+    color: $blue;
   }
   &__tel {
     @include text(14px, 0.28px, 500);
@@ -71,12 +70,12 @@
   }
   &__link:hover::after {
     content: "";
-    background-color: #2196f3;
+    background-color: $blue;
     border: 2px;
     transform: rotate(0deg);
   }
   &__link:hover {
-    color: #2196f3;
+    color: $blue;
   }
 
   &__link {
@@ -88,7 +87,7 @@
     letter-spacing: 0.02em;
     position: relative;
 
-    color: #212121;
+    color: $black;
   }
 
   &__blocks {
@@ -101,6 +100,7 @@
     align-items: center;
     @media (min-width: 768px) {
       gap: 88px;
+      margin-left: -154px;
     }
     @media (min-width: 1200px) {
       gap: 93px;
@@ -124,18 +124,17 @@
       display: none;
     }
   }
-  &__contact {
+  &__contacts {
     display: flex;
-
     align-items: center;
     @media (min-width: 320px) {
       display: none;
     }
     @media (min-width: 768px) {
       gap: 10px;
-      display: flex;
       flex-wrap: wrap;
       flex-direction: column-reverse;
+      display: flex;
       align-items: flex-start;
     }
     @media (min-width: 1200px) {
@@ -144,8 +143,8 @@
     }
 
     :hover {
-      color: $link_hover;
-    } 
+      color: $blue;
+    }
   }
 
   &__main {
@@ -171,6 +170,6 @@
     margin-right: 10px;
   }
   &__span {
-    color: $span;
+    color: $blue;
   }
 }

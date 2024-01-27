@@ -1,29 +1,39 @@
 .team {
-  @media (min-width: 1200px) {
-    background: $link_i;
-    min-height: 708px;
-    padding: 94px 0;
+  background: $white_bg;
+  padding: 94px 0;
+  @media (min-width: 768px) {
+    padding: 60px 0;
+  }
+  @media (max-width: 320px) {
   }
   &__title {
     @extend %titles;
+    @media (max-width: 768px) {
+      font-size: 28px;
+      letter-spacing: 0.84px;
+    }
   }
   &__card {
     width: 270px;
     height: 428px;
     border-radius: 0px 0px 4px 4px;
-    background-color: $background_card;
+    background-color: $white;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    @media (max-width: 768px) {
+      width: 354px;
+      height: 536px;
+    }
   }
   &__img {
     width: 100%;
     height: 260px;
   }
   &__name {
-    @extend %team__name;
+    @extend %team_name;
   }
   &__subtitle {
-    @extend %team__subtitle;
+    @extend %team_subtitle;
   }
   &__apps_link {
     display: block;
@@ -32,7 +42,7 @@
     position: relative;
     border-radius: 100%;
     i {
-      color: $link_i;
+      color: $grey;
       font-size: 22px;
       position: absolute;
       left: 50%;
@@ -40,7 +50,7 @@
       transform: translate(-50%, -50%);
     }
     &:hover i {
-      color: $link_hover;
+      color: $white;
     }
   }
   &__social {
@@ -54,6 +64,14 @@
     justify-content: space-between;
     padding: 0;
     align-items: center;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    @media (max-width: 480px) {
+      display: column;
+    }
   }
   &__social {
     display: flex;
@@ -69,12 +87,15 @@
         transform: translate(-50%, -50%);
       }
       &:hover {
-        background-color: $background_hover;
+        background-color: $blue;
       }
       &:hover path {
-        fill: $link_hover;
-        background-color: $background_hover;
+        fill: $white;
+        background-color: $blue;
       }
     }
+  }
+  &__apps {
+    margin-top: 16px;
   }
 }

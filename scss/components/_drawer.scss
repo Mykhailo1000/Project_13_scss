@@ -13,7 +13,7 @@
     top: 0; 
     left: -100%; 
     transition: 0.5s; 
-    background: #fff; 
+    background: $white; 
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 
       0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04); 
     display: flex; 
@@ -37,7 +37,7 @@
       flex-direction: column-reverse; 
       gap: 32px; 
       &--tel { 
-        color: #2196f3; 
+        color: $blue; 
         font-size: 34px; 
         font-style: normal; 
         font-weight: 500; 
@@ -45,7 +45,7 @@
         letter-spacing: 0.68px; 
       } 
       &--envelope { 
-        color: #757575; 
+        color: $grey; 
         font-size: 24px; 
         font-style: normal; 
         font-weight: 500; 
@@ -54,17 +54,17 @@
       } 
     } 
     &__link { 
-      color: #212121; 
+      color: $black; 
       font-size: 40px; 
       font-style: normal; 
       font-weight: 500; 
       line-height: normal; 
       letter-spacing: 0.8px; 
       &:hover { 
-        color: #2196f3; 
+        color: $blue; 
       } 
       &--social { 
-        color: #2196f3; 
+        color: $blue; 
         font-size: 18px; 
         font-style: normal; 
         font-weight: 500; 

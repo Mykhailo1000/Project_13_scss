@@ -1,17 +1,25 @@
 .footer {
   padding: 60px 0 60px 0;
-  background: $background;
-  &__logo {
+  background: $black_background;
+  &__logo { 
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: $logo;
+    color: $white;
+    margin-top: 5px;
+    @media (max-width: 768px) {
+      font-size: 24px;
+      letter-spacing: 0.72px;
+    }
   }
   &__contacts {
     margin-top: 12px;
+    @media (max-width: 768px) {
+      float: right; 
+    }
   }
   &__wrapper {
     display: flex;
@@ -23,7 +31,8 @@
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
-    color: $address;
+    color: $white;
+    margin-top: 9px;
   }
   &__email_telephone {
     font-style: normal;
@@ -32,6 +41,7 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
   }
   &__title {
     text-align: center;
@@ -40,7 +50,7 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
-    color: $title;
+    color: $white;
   }
   &__us {
     display: flex;
@@ -63,20 +73,21 @@
   }
   a:hover,
   &__us a:hover path {
-    fill: $us;
-    color: $hover;
+    fill: $white;
+    color: $blue;
   }
   &__team_apps_link {
     display: block;
+    margin-top: 20px;
     width: 44px;
     height: 44px;
     position: relative;
     border-radius: 100%;
     &:hover i {
-      color: $hover_i;
+      color: $white;
     }
     i {
-      color: $team_apps_link_i;
+      color: $grey_link;
       font-size: 22px;
       position: absolute;
       left: 50%;
@@ -84,18 +95,20 @@
       transform: translate(-50%, -50%);
     }
     &:hover {
-      color: $hover_i;
-      background-color: $hover;
+      color: $white;
+      background-color: $blue;
     }
   }
   &__telegram_title {
-    text-align: center;
-    font-size: 16px;
+    font-family: Roboto;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-    color: $title;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: $white;
+    margin-right: 368px;
   }
   &__telegram input[type="email"] {
     margin: 0;
@@ -118,14 +131,14 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
   &__telegram_btn {
-    color: $telegram_title;
+    color: $white;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    background: $telegram_btn_background;
+    background: $blue;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     align-items: center;
@@ -140,6 +153,6 @@
     margin-top: 20px;
   }
   &__span {
-    color: $span;
+    color: $blue;
   }
 }
