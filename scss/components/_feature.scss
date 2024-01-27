@@ -1,6 +1,6 @@
 .feature {
   padding: 34px 0 34px;
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     padding: 60px 0 60px 0;
   }
 
@@ -9,10 +9,10 @@
     padding: 0px;
     justify-content: center;
     gap: 30px;
-    @media (max-width: 320px) {
+    @media (min-width: 480px) {
       padding: 0;
     }
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       padding: 0;
       flex-wrap: wrap;
     }
@@ -21,12 +21,14 @@
     width: 270px;
     > h3 {
       @include text(14px, 700, 0.03em);
+      color: $black;
     }
     > p {
       @include text(14px, 400, 0.42px);
       line-height: 24px;
+
     }
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       width: 354px;
     }
   }
