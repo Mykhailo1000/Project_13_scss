@@ -1,6 +1,6 @@
 .customers {
   padding: 94px 0px;
-  &__link {
+  a {
     display: block;
     border-radius: 4px;
     border: 1px solid $grey_link;
@@ -8,8 +8,10 @@
     height: 92px;
     box-sizing: border-box;
     padding: 16px 32px;
-    &:hover {
-      border: 1px solid $blue;
+    &:hover,
+    &:hover path {
+      border-color: $blue;
+      fill: $blue;
     }
   }
   &__list {
@@ -27,10 +29,9 @@
     }
   }
   &__title {
-    @extend %titles;
+		@extend %titles;
     @media (max-width: 768px) {
       font-size: 28px;
-      letter-spacing: 0.84px;
     }
   }
 }

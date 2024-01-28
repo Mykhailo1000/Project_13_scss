@@ -8,6 +8,7 @@
   }
   &__title {
     @extend %titles;
+    margin-bottom: 50px;
     @media (max-width: 768px) {
       font-size: 28px;
       letter-spacing: 0.84px;

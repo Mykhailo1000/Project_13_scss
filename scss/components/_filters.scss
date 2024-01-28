@@ -24,9 +24,9 @@
     width: 125px;
     height: 38px;
     border: none;
-  }
-
-  &__btn_item button:hover {
-    color: $blue;
+    &:hover {
+      background-color: $blue;
+      transition: 2s;
+    }
   }
 }
