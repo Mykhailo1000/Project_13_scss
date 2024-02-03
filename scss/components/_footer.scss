@@ -1,7 +1,7 @@
 .footer {
   padding: 60px 0 60px 0;
   background: $black_background;
-  &__logo { 
+  &__logo {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
@@ -14,16 +14,21 @@
       font-size: 24px;
       letter-spacing: 0.72px;
     }
+    @media (max-width: 480px) {
+      margin-bottom: 20px;
+    }
   }
   &__contacts {
     margin-top: 12px;
     @media (max-width: 768px) {
-      float: right; 
+      float: right;
     }
   }
   &__wrapper {
     display: flex;
     gap: 70px;
+    flex-direction: column;
+    align-items: center;
   }
   &__address {
     font-family: "Roboto";
@@ -99,6 +104,12 @@
       background-color: $blue;
     }
   }
+  &__telegram {
+    @media (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
   &__telegram_title {
     font-family: Roboto;
     font-size: 14px;
@@ -108,7 +119,10 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     color: $white;
-    margin-right: 368px;
+    @media (max-width: 480px) {
+      align-items: center;
+      text-align: center;
+    }
   }
   &__telegram input[type="email"] {
     margin: 0;
@@ -129,6 +143,9 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    @media (max-width: 480px) {
+      width: 100%;
+    }
   }
   &__telegram_btn {
     color: $white;
@@ -151,8 +168,16 @@
     display: flex;
     gap: 12px;
     margin-top: 20px;
+    @media (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__span {
     color: $blue;
+  }
+  &__adress {
+    align-items: center;
+    text-align: center;
   }
 }

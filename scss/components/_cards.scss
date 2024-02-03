@@ -7,16 +7,24 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
   }
   &__item {
-    box-sizing: border-box;
     width: 370px;
     height: 404px;
     background: $white;
     border: 1px solid $white_border;
-    margin-bottom: 32px;
+
     @media (max-width: 768px) {
-      margin-bottom: 30px;
+      width: 450px;
+    }
+    @media (max-width: 1200px) {
+      width: 354px;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
     }
   }
   &__descr {
